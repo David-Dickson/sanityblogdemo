@@ -7,7 +7,7 @@ const Header = () => {
       <div className="flex items-center space-x-5">
         <Link href="/">
           <img
-            src="https://links.papareact.com/yvf"
+            src="/images/logo/medium-logo.svg"
             className="w-44 cursor-pointer object-contain"
           />
         </Link>

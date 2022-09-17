@@ -4,7 +4,8 @@ import { GetStaticProps } from 'next';
 import { sanityClient, urlFor } from '../../sanity';
 import PortableText from 'react-portable-text';
 import { useForm, SubmitHandler } from 'react-hook-form';
-import { Post } from '../../typings';
+// import { Post } from '../../typing';
+import { Post } from '../../typings'
 import Header from '../../components/Header';
 
 interface IFormInput {
@@ -20,9 +21,6 @@ interface Props {
 
 const Post = ({ post }: Props) => {
   const [submitted, setSubmitted] = useState(false);
-
-  console.log(post)
-
   const {
     register,
     handleSubmit,
@@ -38,7 +36,7 @@ const Post = ({ post }: Props) => {
     })
       .then(() => {
         console.log(data);
-        setSubmitted(true)
+        setSubmitted(true);
       })
       .catch((err) => {
         console.log(err);
